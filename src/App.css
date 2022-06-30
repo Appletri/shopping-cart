@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Bebas+Neue&display=swap');
+
+:root {
+  --main-accent-color: #b42d4f;
+  --main-background-color: #292524;
+  --gold-high-color: #e8c180;
+  --gold-low-color: #d19a57;
+  --main-font:'Barlow', sans-serif;
+  --header-font: 'Bebas Neue', cursive;
+}
+
+.App {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+}

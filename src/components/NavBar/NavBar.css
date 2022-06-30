@@ -1,0 +1,123 @@
+.nav-bar {
+  width: 100vw;
+  height: 100px;
+  background-color: var(--main-background-color);
+  color: var(--main-accent-color);
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  /* padding: 5px 28px ; */
+}
+
+.nav-bar {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.nav-left {
+  margin-left: 28px;
+  width: 40vw;
+  user-select: none;
+}
+.nav-left .home{
+  color: var(--main-accent-color);
+  text-decoration: none;
+}
+
+.nav-right {
+  margin-right: 28px;
+  display: flex;
+  width: 40vw;
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  height: 90%;
+  max-width: 85px;
+}
+
+.nav-button {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--main-accent-color);
+  padding: 13px 20px;
+  border-radius: 300px;
+  background-color: var(--main-background-color);
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  transition: ease-in .2s;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-hamburger {
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: ease .5s;
+  transform: translateY(-100vh);
+  background-color: var(--main-background-color);
+  gap: 40px;
+  z-index: 5;
+}
+
+.nav-mobile .nav-button {
+  border: none;
+  font-size: 2rem;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+.nav-close {
+  position: absolute;
+  font-size: 3rem;
+  top: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.nav-button img {
+  width: 35px;
+  height: auto;
+  filter: invert(25%) sepia(16%) saturate(7138%) hue-rotate(319deg) brightness(96%) contrast(92%);
+}
+
+.quantity-indicator {
+  position: absolute;
+  color: white;
+  background-color: var(--main-accent-color);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(10px,10px)
+}
+
+.home {
+  font-family: var(--header-font);
+  letter-spacing: 5px;
+  font-size: 2.5rem;
+}
