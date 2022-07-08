@@ -1,6 +1,6 @@
 import './FeaturedItems.css';
 import Item from './Item.js';
-import UseInventory from '../../Data/Inventory';
+import { UseInventory } from '../../Data/Inventory';
 
 function FeaturedItems() {
 
@@ -17,7 +17,6 @@ function FeaturedItems() {
       </div>
       <div className='featured-section'>
         <Item item={UseInventory('SWUVSA Crewneck')}/>
-        <Item item={UseInventory('SWUVSA Back Crewneck')}/>
         <Item item={UseInventory('Longevity Crewneck')}/>
         <Item item={UseInventory('Dễ Thương Crewneck')}/>
       </div>

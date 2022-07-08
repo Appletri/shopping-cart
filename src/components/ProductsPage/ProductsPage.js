@@ -45,6 +45,11 @@ function ProductsPage(props) {
           <div onClick={select} className={getSizes('l')}>L</div>
           <div onClick={select} className={getSizes('xl')}>XL</div>
         </div>
+        <ul className='item-info'>
+          {item.info.map((detail) => {
+            return (<li>{detail}</li>)
+          })}
+        </ul>
         <button onClick={props.add} className='add nogo'>Add to Cart</button>
       </div>
 

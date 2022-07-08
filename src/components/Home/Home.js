@@ -1,6 +1,7 @@
 import ParallaxImage from './ParallaxImage/ParallaxImage.js';
 import heroPic from '../../assets/long-sleeve/_DSC1789.jpg';
 import FeaturedItems from './FeaturedItems/FeaturedItems.js';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -38,7 +39,9 @@ function Home() {
         <div className='text'>
           <h2>Making Street and Culture Fashionable</h2>
           <p>Represent the Vietnamese culture with SouthWest VSA swag</p>
-          <button className='shop'>Shop Now</button>
+          <Link to='Shop'>
+            <button className='shop-now-button'>Shop Now</button>
+          </Link>
         </div>
 
         <ParallaxImage img={heroPic} info='placeholder img'/> 

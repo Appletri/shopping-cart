@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import ScrollToTop from './components/Helper/ScrollToTop';
 import { useState } from 'react';
 import ProductsPage from './components/ProductsPage/ProductsPage';
+import Shop from './components/Shops/Shop';
 
 function App() {
   const [items, setItems] = useState([])
@@ -26,10 +27,10 @@ function App() {
         quantity: quantity.value,
         price: price.innerHTML
       })
+      setItems(newItems);
+      console.log(newItems);
     }  
-    setItems(newItems);
 
-    console.log(newItems);
   }
 
   return (
@@ -43,8 +44,9 @@ function App() {
           <Routes> 
             <Route path='/' element={<Home />} />
             <Route path='shopping-cart' element={<Home />} />
-            <Route path='shopping-cart/Home' element={<Home />} />
-            <Route path='shopping-cart/Home/products/:id' element={<ProductsPage add={addItems}/>} />
+            <Route path='shopping-cart/Shop' element={<Shop />} />
+            <Route path='shopping-cart/Shop/products/:id' element={<ProductsPage add={addItems}/>} />
+            <Route path='shopping-cart/products/:id' element={<ProductsPage add={addItems}/>} />
             <Route
               path="*"
               element={

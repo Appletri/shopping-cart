@@ -1,0 +1,52 @@
+.shop {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop-filters {
+  display: flex;
+  width: 80vw;
+  gap: .5rem;
+}
+
+.shop-filter {
+  padding: 5px;
+  color: lightgray;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.filtered {
+  color: black;
+}
+
+.shop-content {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  gap: 5vw;
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper {
+  height: 350px;
+  width: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-images {
+  width: 100%;
+}
