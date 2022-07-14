@@ -1,0 +1,87 @@
+.checkout {
+  position: fixed;
+  background-color: white;
+  padding-top: 50px;
+  width: 370px;
+  height: 100vh;
+  top: 0;
+  right: 0px;
+  z-index: 10;
+  transition: ease-in 0.2s;
+  overflow: scroll;
+  outline: 5px solid var(--main-accent-color);
+}
+
+.checkout-filter {
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.486);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.checkout-hidden {
+  transform: translateX(400px);
+}
+
+.checkout, .checkout-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 95%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--main-accent-color);
+}
+
+.cart-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 20px;
+}
+
+.checkout-img {
+  width: 60px;
+}
+
+.checkout-info {
+  gap: 20px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 30px;
+}
+
+.total p {
+  margin: 5px;
+}
+
+.checkout-button {
+  margin-top: 50px;
+  width: 200px;
+  font-size: 2rem;
+  font-family: var(--header-font);
+  color: var(--main-accent-color);
+  letter-spacing: 2px;
+  padding: 15px 25px;
+  align-self: center;
+  box-shadow: 5px 5px 0px var(--main-accent-color);
+  transition: ease-in 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.checkout-button:hover {
+  color: var(--gold-low-color);
+  background-color: var(--main-background-color);
+  box-shadow: 10px 10px 0px var(--gold-low-color);
+}

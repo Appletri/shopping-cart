@@ -34,7 +34,7 @@
 
 .sold-out {
   color: lightgray;
-  border: lightgray;
+  border: 1px solid lightgray !important;
 }
 
 .product h1 {
@@ -75,4 +75,35 @@
   font-family: var(--header-font);
   color: rgb(85, 85, 85);
   margin-bottom: 3rem;
+}
+
+.imageWrapper {
+  width: 350px;
+  height: 600px;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album {
+  display: flex;
+  align-self: start;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.thumbWrapper {
+  width: 50px;
+  height: 70px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.thumbnail {
+  height: 150%;
 }

@@ -6,7 +6,7 @@ function NavButtonMobile(props) {
     navMobile.classList.toggle('show');
   }
   return (
-    <Link to={'shopping-cart/' + props.title} onClick={handleClick} className="nav-button">{props.title}</Link>
+    <Link to={props.title} onClick={handleClick} className="nav-button">{props.title}</Link>
   );
 }
 

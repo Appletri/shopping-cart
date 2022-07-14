@@ -39,9 +39,9 @@ function Shop() {
         {inventory.map((item) => {
           return(
             <div className="shop-item">
-              <Link to={`products/${item.id}`} state={item}>
+              <Link to={`${item.id}`} state={item}>
                 <div className="image-wrapper">
-                  <img className="shop-images" src={item.image} alt={item.name}></img>
+                  <img className="shop-images" src={item.image[0]} alt={item.name}></img>
                 </div>
               </Link>
               <h2>{item.name}</h2>

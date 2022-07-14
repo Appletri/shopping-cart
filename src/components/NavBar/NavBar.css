@@ -8,12 +8,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  /* padding: 5px 28px ; */
-}
-
-.nav-bar {
   font-weight: 700;
   font-size: 2rem;
+  /* padding: 5px 28px ; */
 }
 
 .nav-left {
@@ -21,6 +18,11 @@
   width: 40vw;
   user-select: none;
 }
+
+.nav-left-mobile {
+  margin-left: 5px;
+}
+
 .nav-left .home{
   color: var(--main-accent-color);
   text-decoration: none;
@@ -30,13 +32,24 @@
   margin-right: 28px;
   display: flex;
   width: 40vw;
+  justify-content: end;
+}
+
+.nav-right-mobile {
+  margin-right: 5px;
   display: flex;
   justify-content: end;
 }
 
+
 .logo {
   height: 90%;
   max-width: 85px;
+}
+
+.logoName {
+  height: 90%;
+  max-width: 140px;
 }
 
 .nav-button {

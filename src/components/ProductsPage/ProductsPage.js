@@ -5,7 +5,7 @@ import './ProductsPage.css';
 function ProductsPage(props) {
   const location = useLocation()
   const item = location.state;
-  const [size, setSize] = useState(false)
+  const [size, setSize] = useState(false);
 
   useEffect(() => {
     const addButt = document.querySelector('.add');
@@ -15,7 +15,7 @@ function ProductsPage(props) {
   },[size])
 
   function getSizes(size) {
-    if (item.size === 0) {
+    if (item[size] === 0) {
       return 'size sold-out'
     } else {
       return 'size in-stock'
@@ -23,15 +23,33 @@ function ProductsPage(props) {
   }
 
   const select = (e) => {
-    const sizes = document.querySelectorAll('.size')
-    sizes.forEach((target) => target.classList.remove('selected'));
-    e.target.classList.add('selected');
-    setSize(true) 
+    if (e.target.className === 'size in-stock') {
+      const sizes = document.querySelectorAll('.size')
+      sizes.forEach((target) => target.classList.remove('selected'));
+      e.target.classList.add('selected');
+      setSize(true) 
+    }
+  }
+
+  const handlePic = (e) => {
+    const image = document.querySelector('.item-image');
+    image.src = e.target.src
   }
 
   return(
     <form className="product">
-      <img src={item.image} alt={item.name}></img>
+      <div className='album'>
+        {item.image.map((picture) => {
+          return (
+            <div className='thumbWrapper'>
+              <img onClick={handlePic} className='thumbnail' src={picture} alt='unavailable'></img>
+            </div>
+          )
+        })}
+      </div>
+      <div className='imageWrapper'>
+        <img className='item-image' src={item.image[0]} alt={item.name}></img>
+      </div>
       <div className='text'>
         <h1 className='name'>{item.name}</h1>
         <div className='subtext'>

@@ -12,7 +12,7 @@ const inventory = [
   {
     name: 'Grey Hoodie',
     id: uniqid(),
-    image: img_gh,
+    image: [img_gh],
     price: 59.99,
     s: 10,
     m: 10,
@@ -24,7 +24,7 @@ const inventory = [
   {
     name: 'Heathered Grey Hoodie',
     id: uniqid(),
-    image: img_hgh,
+    image: [img_hgh],
     price: 59.99,
     s: 10,
     m: 0,
@@ -36,7 +36,7 @@ const inventory = [
   {
     name: 'Maroon Hoodie',
     id: uniqid(),
-    image: img_mh,
+    image: [img_mh],
     price: 59.99,
     s: 10,
     m: 10,
@@ -48,8 +48,7 @@ const inventory = [
   {
     name: 'SWUVSA Crewneck',
     id: uniqid(),
-    image: img_sc,
-    otherImages: [img_sbc],
+    image: [img_sc, img_sbc],
     price: 59.99,
     s: 10,
     m: 10,
@@ -61,7 +60,7 @@ const inventory = [
   {
     name: 'Longevity Crewneck',
     id: uniqid(),
-    image: img_lc,
+    image: [img_lc],
     price: 59.99,
     s: 0,
     m: 0,
@@ -73,7 +72,7 @@ const inventory = [
   {
     name: 'Dễ Thương Crewneck',
     id: uniqid(),
-    image: img_dtc,
+    image: [img_dtc],
     price: 59.99,
     s: 0,
     m: 10,
