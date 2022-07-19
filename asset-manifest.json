@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.be7240b2.css",
+    "main.js": "/shopping-cart/static/js/main.dd069835.js",
+    "static/media/SWUVSA_Lanyard.jpg": "/shopping-cart/static/media/SWUVSA_Lanyard.5eb47ce1c5b4dedc3254.jpg",
+    "static/media/_DSC1789.jpg": "/shopping-cart/static/media/_DSC1789.de59613af9c94a467475.jpg",
+    "static/media/tshirt_tam_su.jpg": "/shopping-cart/static/media/tshirt_tam_su.607bca64cfe60f51fa70.jpg",
+    "static/media/longsleeve_white.jpg": "/shopping-cart/static/media/longsleeve_white.4b0993cf7e6e8021f4ec.jpg",
+    "static/media/Beanie_Orange.jpg": "/shopping-cart/static/media/Beanie_Orange.1f72df4414703a74aed8.jpg",
+    "static/media/Beanie_Black.jpg": "/shopping-cart/static/media/Beanie_Black.2f15fd1f266ac4f1207d.jpg",
+    "static/media/tshirt_white.jpg": "/shopping-cart/static/media/tshirt_white.e7d1cf0dc93ebfe0eb20.jpg",
+    "static/media/heathered_grey_hoodie.jpg": "/shopping-cart/static/media/heathered_grey_hoodie.8b0cb8e11e6b39fd4fa0.jpg",
+    "static/media/SWUVSA_Logo.png": "/shopping-cart/static/media/SWUVSA_Logo.8b823f5cae1d2e1b8b8d.png",
+    "static/media/longsleeve_black.jpg": "/shopping-cart/static/media/longsleeve_black.810f44d83da93f33ff6d.jpg",
+    "static/media/Beanie_Blue.jpg": "/shopping-cart/static/media/Beanie_Blue.a60835ba70a3f0b23ec9.jpg",
+    "static/media/Beanie_Maroon.jpg": "/shopping-cart/static/media/Beanie_Maroon.b75f38adf4e220f192f3.jpg",
+    "static/media/tank_tam_su.jpg": "/shopping-cart/static/media/tank_tam_su.15eb7b3b250904a66d37.jpg",
+    "static/media/tshirt_dep_male_2.jpg": "/shopping-cart/static/media/tshirt_dep_male_2.a5f87179638bbfac7c82.jpg",
+    "static/media/grey_hoodie.jpg": "/shopping-cart/static/media/grey_hoodie.85785184f65f9a7716d0.jpg",
+    "static/media/tshirt_dep_female_2.jpg": "/shopping-cart/static/media/tshirt_dep_female_2.ae9248dc038c55197de5.jpg",
+    "static/media/maroon_hoodie.jpg": "/shopping-cart/static/media/maroon_hoodie.e0fd1fbb8103aeda5cef.jpg",
+    "static/media/tshirt_dep_male.jpg": "/shopping-cart/static/media/tshirt_dep_male.16602f85bcb9f22d5b35.jpg",
+    "static/media/longevity_crewneck.jpg": "/shopping-cart/static/media/longevity_crewneck.2cb50e204f32ddcf1b34.jpg",
+    "static/media/swuvsa_back_crewneck.jpg": "/shopping-cart/static/media/swuvsa_back_crewneck.ab0e95e1414596035c0a.jpg",
+    "static/media/tshirt_dep_female.jpg": "/shopping-cart/static/media/tshirt_dep_female.cde95b2350e7945fa15a.jpg",
+    "static/media/de_thuong_crewneck.jpg": "/shopping-cart/static/media/de_thuong_crewneck.058baa435219b93dc65c.jpg",
+    "static/media/swuvsa_crewneck.jpg": "/shopping-cart/static/media/swuvsa_crewneck.36ee10b07b2c4e37869f.jpg",
+    "static/media/SWUVSA_Logo.svg": "/shopping-cart/static/media/SWUVSA_Logo.f0218cc460a0002f2c0631ef432c95ef.svg",
+    "static/media/shopping-cart.svg": "/shopping-cart/static/media/shopping-cart.5dc21c56057c1a3a1bb36d1e7b61fef8.svg",
+    "index.html": "/shopping-cart/index.html",
+    "static/media/linkedin.svg": "/shopping-cart/static/media/linkedin.04e419b047cee444054a1684e4997d49.svg",
+    "static/media/mail.svg": "/shopping-cart/static/media/mail.be566da949352a61d9ce062582418c00.svg",
+    "main.be7240b2.css.map": "/shopping-cart/static/css/main.be7240b2.css.map",
+    "main.dd069835.js.map": "/shopping-cart/static/js/main.dd069835.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be7240b2.css",
+    "static/js/main.dd069835.js"
+  ]
+}
