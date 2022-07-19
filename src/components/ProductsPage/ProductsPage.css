@@ -9,6 +9,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .sizes {
@@ -106,4 +107,19 @@
 
 .thumbnail {
   height: 150%;
+}
+
+@media only screen and (max-width: 650px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .text {
+    padding: 20px;
+  }
+
+  .album {
+    padding-left: 20px;
+    flex-direction: row;
+  }
 }

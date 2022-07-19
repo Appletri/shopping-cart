@@ -1,5 +1,5 @@
 import ParallaxImage from './ParallaxImage/ParallaxImage.js';
-import heroPic from '../../assets/long-sleeve/_DSC1789.jpg';
+import heroPic from '../../assets/Mockups/_DSC1789.jpg';
 import FeaturedItems from './FeaturedItems/FeaturedItems.js';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -43,7 +43,6 @@ function Home() {
             <button className='shop-now-button'>Shop Now</button>
           </Link>
         </div>
-
         <ParallaxImage img={heroPic} info='placeholder img'/> 
         <div className='filter'/>
       </div>

@@ -10,6 +10,7 @@
   width: 80vw;
   gap: .5rem;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .shop-filter {

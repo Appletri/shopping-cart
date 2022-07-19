@@ -31,23 +31,29 @@ function Shop() {
       <div className="shop-filters">
         <div onClick={handleClick} className="shop-filter filtered">All</div>
         <div onClick={handleClick} className="shop-filter">Outerwear</div>
-        <div onClick={handleClick} className="shop-filter">Shirts</div>
+        <div onClick={handleClick} className="shop-filter">Shirt</div>
         <div onClick={handleClick} className="shop-filter">Pants</div>
         <div onClick={handleClick} className="shop-filter">Accessories</div>
       </div>
       <div className="shop-content">
         {inventory.map((item) => {
-          return(
-            <div className="shop-item">
-              <Link to={`${item.id}`} state={item}>
-                <div className="image-wrapper">
-                  <img className="shop-images" src={item.image[0]} alt={item.name}></img>
-                </div>
-              </Link>
-              <h2>{item.name}</h2>
-              <p>{item.price}</p>
-            </div>
-          )
+          if (inventory.length === 0) {
+            return(
+              <p>Coming Soon</p>
+            )
+          } else {
+            return(
+              <div className="shop-item">
+                <Link to={`${item.id}`} state={item}>
+                  <div className="image-wrapper">
+                    <img className="shop-images" src={item.image[0]} alt={item.name}></img>
+                  </div>
+                </Link>
+                <h2>{item.name}</h2>
+                <p>{item.price}</p>
+              </div>
+            )
+          }
         })}
       </div>
     </div>
