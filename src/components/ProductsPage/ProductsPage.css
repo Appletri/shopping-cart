@@ -19,7 +19,7 @@
   margin-bottom: 30px;
 }
 
-.sizes div {
+.size {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,7 @@
   height: 2rem;
   border: 1px solid black;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .selected {

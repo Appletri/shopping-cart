@@ -10,14 +10,13 @@ function Checkout(props) {
     checkoutWindow.classList.toggle('checkout-hidden');
     checkoutFilter.style.display = 'none';
 }
-  
   return (
     <div>
       <div className='checkout-filter'></div>
       <div className='checkout checkout-hidden'>
         <div onClick={handleCheckoutClick} className="nav-close">x</div>
         <ol>
-          {props.cart.map((item) => {
+          {props.cart.map((item, index) => {
 
             const quantity = parseInt(item.quantity);
             const price = parseFloat(item.price.substring(1));
@@ -30,8 +29,16 @@ function Checkout(props) {
                 </div>
                 <div className='checkout-info'>
                   <div>{item.name + ' ' + item.size}</div>
-                  <div>{item.quantity + ' x ' + item.price}</div>
+                  <div className='checkout-item'>
+                    <div className='quantity-changer'>
+                      <div id={index} onClick={props.decrease} className='quantity-button'>-</div>
+                      <div className='quantity-display'>{item.quantity}</div>
+                      <div id={index} onClick={props.increase} className='quantity-button'>+</div>
+                    </div>
+                    <p>{' x ' + item.price}</p>
+                  </div>
                 </div>
+                <div id={index} className='remove-item' onClick={props.remove}>X</div>
               </li>
             )
           })}
@@ -44,9 +51,9 @@ function Checkout(props) {
             <p>Total:</p>
           </div>
           <div className='total-values'>
-            <p>${total}</p>
+            <p>${parseFloat(total).toFixed(2)}</p>
             <p>Free</p>
-            <p>${total + shipping}</p>
+            <p>${parseFloat(total + shipping).toFixed(2)}</p>
           </div>
         </div>
         <hr className='line final'></hr>

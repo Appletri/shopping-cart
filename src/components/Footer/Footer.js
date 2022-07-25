@@ -23,9 +23,9 @@ function Footer(props) {
       </div>
       <div className='footer-right'>
         <h3>Check out our:</h3>
-        <a href=''>FAQ</a>
-        <a href=''>About</a>
-        <a href=''>Customer Support</a>
+        <a href='https://github.com/Appletri'>FAQ</a>
+        <a href='https://github.com/Appletri'>About</a>
+        <a href='https://github.com/Appletri'>Customer Support</a>
       </div>
     </footer>
   );

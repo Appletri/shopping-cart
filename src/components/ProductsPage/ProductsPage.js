@@ -1,39 +1,35 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import './ProductsPage.css';
+import Sizes from './Sizes';
+import Add from './Add';
 
 function ProductsPage(props) {
   const location = useLocation()
   const item = location.state;
+  const [selectedSize, setSelectedSize] =  useState();
   const [size, setSize] = useState(false);
-
-  useEffect(() => {
-    const addButt = document.querySelector('.add');
-    if (size === true) {
-      addButt.classList.toggle('nogo');
-    }
-  },[size])
-
-  function getSizes(size) {
-    if (item[size] === 0) {
-      return 'size sold-out'
-    } else {
-      return 'size in-stock'
-    }
-  }
+  const [quantity, setQuantity] = useState(false);
+  const [itemImage, setItemImage] = useState(item.image[0])
 
   const select = (e) => {
     if (e.target.className === 'size in-stock') {
-      const sizes = document.querySelectorAll('.size')
-      sizes.forEach((target) => target.classList.remove('selected'));
-      e.target.classList.add('selected');
+      setSelectedSize(e.target.innerHTML);
       setSize(true) 
     }
   }
 
   const handlePic = (e) => {
-    const image = document.querySelector('.item-image');
-    image.src = e.target.src
+    setItemImage(e.target.src)
+  }
+
+  const handleChange = (e) => {
+    if (parseInt(e.target.value) >= 1) {
+      setQuantity(true)
+    } else {
+      setQuantity(false)  
+    }  
+
   }
 
   return(
@@ -48,27 +44,27 @@ function ProductsPage(props) {
         })}
       </div>
       <div className='imageWrapper'>
-        <img className='item-image' src={item.image[0]} alt={item.name}></img>
+        <img className='item-image' src={itemImage} alt={item.name}></img>
       </div>
       <div className='text'>
         <h1 className='name'>{item.name}</h1>
         <div className='subtext'>
           <h3 className='price'>{'$' + item.price}</h3>
           <p>X</p>
-          <input className='quantity' type='number' min={1} max={10}></input>
+          <input onChange={handleChange} className='quantity' type='number' min={1} max={10}></input>
         </div>
         <div className='sizes'>
-          <div onClick={select} className={getSizes('s')}>S</div>
-          <div onClick={select} className={getSizes('m')}>M</div>
-          <div onClick={select} className={getSizes('l')}>L</div>
-          <div onClick={select} className={getSizes('xl')}>XL</div>
+          <Sizes size='s' select={select} item={item} selectedSize = {selectedSize}/>
+          <Sizes size='m' select={select} item={item} selectedSize = {selectedSize}/>
+          <Sizes size='l' select={select} item={item} selectedSize = {selectedSize}/>
+          <Sizes size='xl' select={select} item={item} selectedSize = {selectedSize}/>
         </div>
         <ul className='item-info'>
           {item.info.map((detail) => {
             return (<li>{detail}</li>)
           })}
         </ul>
-        <button onClick={props.add} className='add nogo'>Add to Cart</button>
+        <Add add={props.add} isQuantity={quantity} isSize={size} />
       </div>
 
     </form>

@@ -9,7 +9,7 @@ const handleCheckoutClick = () => {
 
 function NavButton(props) {
   return (
-    <Link to={props.title} className="nav-button">{props.title}</Link>
+    <Link to={`/shopping-cart/${props.title}`} className="nav-button">{props.title}</Link>
   );
 }
 

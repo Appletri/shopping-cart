@@ -18,7 +18,6 @@ function NavBar(props) {
     window.addEventListener("resize", updateMedia);
     return () => window.removeEventListener("resize", updateMedia);
   });
-
   return (
 
 
@@ -27,7 +26,7 @@ function NavBar(props) {
 
         <div className='nav-bar'>
           <div className='nav-left'>
-            <Link to='/' className='home'>{props.name}</Link>
+            <Link to='/shopping-cart' className='home'>{props.name}</Link>
           </div>
           <img className='logo' src={logo} alt='logo'/>
           <div className='nav-right'>
@@ -35,13 +34,14 @@ function NavBar(props) {
             <NavButtonCheckout title="Checkout" image={shoppingCart} 
             items={props.items}/>
           </div>
-          <Checkout cart={props.items}/>
+          <Checkout cart={props.items} remove={props.remove} 
+          increase={props.increase} decrease={props.decrease}/>
         </div>
 
         ) : (
         <div className='nav-bar'>
           <div className='nav-left-mobile'>
-            <Link to='/' className='home'>
+            <Link to='/shopping-cart' className='home'>
               <img className='logoName' src={logoName} alt='logo'/>
             </Link>
           </div>
@@ -50,7 +50,8 @@ function NavBar(props) {
             <NavButtonCheckout title="Checkout" image={shoppingCart} 
             items={props.items}/>
           </div>
-          <Checkout cart={props.items}/>
+          <Checkout cart={props.items} remove={props.remove} 
+          increase={props.increase} decrease={props.decrease}/>
         </div>
         )}
       </div>

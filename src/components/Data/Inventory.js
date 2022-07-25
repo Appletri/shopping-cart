@@ -1,4 +1,3 @@
-import { useState } from "react";
 import uniqid from 'uniqid';
 import img_gh from '../../assets/Outerwear/grey_hoodie.jpg';
 import img_hgh from '../../assets/Outerwear/heathered_grey_hoodie.jpg';
