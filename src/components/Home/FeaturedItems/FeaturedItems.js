@@ -6,7 +6,7 @@ function FeaturedItems() {
 
   return (
     <div className='featured-items'>
-      <h1 className='FWheader'>Featured Items</h1>
+      {/* <h1 className='FWheader'>Featured Items</h1> */}
       <div className='featured-section'>
         <Item item={UseInventory('Dep Trai Tee Design 2')} />
         <Item item={UseInventory('SWUVSA Design White')} />
