@@ -1,5 +1,5 @@
 # Shopping Cart
-![gif coming soon]()
+![](https://github.com/Appletri/Appletri/blob/main/assets/shopping-cart.gif)
 ## Links
 - [Try Shopping Cart here!](https://appletri.github.io/shopping-cart/)
 
