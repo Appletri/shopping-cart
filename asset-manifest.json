@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.720fd6e2.css",
-    "main.js": "/shopping-cart/static/js/main.08c49e2e.js",
+    "main.js": "/shopping-cart/static/js/main.20788cf9.js",
     "static/media/SWUVSA_Lanyard.jpg": "/shopping-cart/static/media/SWUVSA_Lanyard.5eb47ce1c5b4dedc3254.jpg",
-    "static/media/_DSC1778.jpg": "/shopping-cart/static/media/_DSC1778.71d7a694228bb3ddae6b.jpg",
+    "static/media/DSC1778.jpg": "/shopping-cart/static/media/DSC1778.71d7a694228bb3ddae6b.jpg",
     "static/media/tshirt_tam_su.jpg": "/shopping-cart/static/media/tshirt_tam_su.607bca64cfe60f51fa70.jpg",
     "static/media/longsleeve_white.jpg": "/shopping-cart/static/media/longsleeve_white.4b0993cf7e6e8021f4ec.jpg",
     "static/media/Beanie_Orange.jpg": "/shopping-cart/static/media/Beanie_Orange.1f72df4414703a74aed8.jpg",
@@ -31,10 +31,10 @@
     "static/media/linkedin.svg": "/shopping-cart/static/media/linkedin.04e419b047cee444054a1684e4997d49.svg",
     "static/media/mail.svg": "/shopping-cart/static/media/mail.be566da949352a61d9ce062582418c00.svg",
     "main.720fd6e2.css.map": "/shopping-cart/static/css/main.720fd6e2.css.map",
-    "main.08c49e2e.js.map": "/shopping-cart/static/js/main.08c49e2e.js.map"
+    "main.20788cf9.js.map": "/shopping-cart/static/js/main.20788cf9.js.map"
   },
   "entrypoints": [
     "static/css/main.720fd6e2.css",
-    "static/js/main.08c49e2e.js"
+    "static/js/main.20788cf9.js"
   ]
 }
