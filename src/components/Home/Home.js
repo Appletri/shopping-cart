@@ -1,5 +1,5 @@
 import ParallaxImage from './ParallaxImage/ParallaxImage.js';
-import heroPic from '../../assets/Mockups/_DSC1778.jpg';
+import heroPic from '../../assets/Mockups/DSC1778.jpg';
 import FeaturedItems from './FeaturedItems/FeaturedItems.js';
 import { Link } from 'react-router-dom';
 import './Home.css';
