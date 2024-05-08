@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.720fd6e2.css",
-    "main.js": "/shopping-cart/static/js/main.20788cf9.js",
+    "main.css": "/shopping-cart/static/css/main.ebdd4f54.css",
+    "main.js": "/shopping-cart/static/js/main.509392d7.js",
     "static/media/SWUVSA_Lanyard.jpg": "/shopping-cart/static/media/SWUVSA_Lanyard.5eb47ce1c5b4dedc3254.jpg",
     "static/media/DSC1778.jpg": "/shopping-cart/static/media/DSC1778.71d7a694228bb3ddae6b.jpg",
     "static/media/tshirt_tam_su.jpg": "/shopping-cart/static/media/tshirt_tam_su.607bca64cfe60f51fa70.jpg",
@@ -30,11 +30,11 @@
     "index.html": "/shopping-cart/index.html",
     "static/media/linkedin.svg": "/shopping-cart/static/media/linkedin.04e419b047cee444054a1684e4997d49.svg",
     "static/media/mail.svg": "/shopping-cart/static/media/mail.be566da949352a61d9ce062582418c00.svg",
-    "main.720fd6e2.css.map": "/shopping-cart/static/css/main.720fd6e2.css.map",
-    "main.20788cf9.js.map": "/shopping-cart/static/js/main.20788cf9.js.map"
+    "main.ebdd4f54.css.map": "/shopping-cart/static/css/main.ebdd4f54.css.map",
+    "main.509392d7.js.map": "/shopping-cart/static/js/main.509392d7.js.map"
   },
   "entrypoints": [
-    "static/css/main.720fd6e2.css",
-    "static/js/main.20788cf9.js"
+    "static/css/main.ebdd4f54.css",
+    "static/js/main.509392d7.js"
   ]
 }
