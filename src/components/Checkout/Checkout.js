@@ -28,7 +28,7 @@ function Checkout(props) {
                   <img className='checkout-img' src={item.image} alt={item.name}></img>
                 </div>
                 <div className='checkout-info'>
-                  <div>{item.name + ' ' + item.size}</div>
+                  <div>{item.name + ' ' + '(' + item.size + ')'}</div>
                   <div className='checkout-item'>
                     <div className='quantity-changer'>
                       <div id={index} onClick={props.decrease} className='quantity-button'>-</div>
@@ -39,6 +39,7 @@ function Checkout(props) {
                   </div>
                 </div>
                 <div id={index} className='remove-item' onClick={props.remove}>X</div>
+                <hr></hr>
               </li>
             )
           })}
